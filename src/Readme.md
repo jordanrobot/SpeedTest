@@ -24,3 +24,7 @@ non-user facing classes
   * New(Message As String): void
   * Message: String
   * Results(): String  
+
+TODO:
+
+* Pass testing methods into the SpeedTest via delegates/similar
