@@ -1,3 +1,4 @@
+'</Collector>
 Public Class Timer
 
     Private _stopwatch As Stopwatch = New Stopwatch()
@@ -20,11 +21,14 @@ Public Class Timer
     Public Sub StopTimer()
         _stopwatch.Stop()
         _timespan = _stopwatch.Elapsed
-        _result = String.Format("{0:00}.{1:000}", (_timespan.Hours * 3600) + (_timespan.Minutes*60) + _timespan.Seconds, _timespan.Milliseconds)
+        _result = String.Format("{0:00}.{1:000} seconds", (_timespan.Hours * 3600) + (_timespan.Minutes*60) + _timespan.Seconds, _timespan.Milliseconds)
     End Sub
 
     Public Function GetResults() As String
         Return me._message & " Total Time: " & _result
     End Function
 
+    Public Function GetMessage() As String
+        Return me._message
+    End Function
 End Class
