@@ -6,25 +6,20 @@
 * The goal is to provide users with the option of using as a compiled .dll library file or a single coallated VB.Net file.  The user can include these in their projects to use the benchmarking class objects.
 * The coallated VB.net file can also be used as a template file.  The user can add their own tests and run the file in inventor.
 
-Basic Structure
+SpeedTest Class
 ---
 
 This is an outline of the tool's primary class (this may change as the tool is developed more)...
 
 * SpeedTest
-  * New (String)
-  * NewTimer(message, testMethod)
-  * RunTests
-  * ShowResultsInDialog
-  * Results : String
+  * New (String) : Creates a new SpeedTest object.
+  * AddTest (message, Subroutine) : adds a test into the testing queue.
+  * RunTests : runs the tests
+  * ShowResultsInDialog : shows the users a dialog with the execution times.
+  * GetResults : returns a string with the execution times.
 
-non-user facing classes
-* Timer
-  * New: void
-  * New(Message As String): void
-  * Message: String
-  * Results(): String  
+How to Use
+---
 
-TODO:
-
-* Pass testing methods into the SpeedTest via delegates/similar
+* Please refer to the HowToUse.vb file for an example of how to utilize this library.
+* Add a reference to the SpeedTests.dll or use the SpeedTest template.iLogicVB file as the template for your speed tests.
