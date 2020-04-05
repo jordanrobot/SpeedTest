@@ -3,7 +3,7 @@
 Public Class SpeedTest
 
     Public Property Iterations As Integer = 1
-    Private _timers As List(Of Timer)
+    Private _timers As List(Of Timer) = New List(Of Timer)
     Private _results As String = ""
 
     Public Sub New()
@@ -23,7 +23,7 @@ Public Class SpeedTest
            Next i
            _timer.StopTimer()
 
-           _results = _results & "vbLf" & _timer.Results
+           AppendResults(_timer.Results)
        Next _timer
     End Sub
 
@@ -35,4 +35,7 @@ Public Class SpeedTest
         Return _results
     End Function
 
+    Private Sub AppendResults(value As String)
+        _results = _results & vbLf & value
+    End Sub
 End Class
