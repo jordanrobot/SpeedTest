@@ -1,36 +1,39 @@
-﻿Imports System.Windows.Forms
-
+﻿'</Collector>
 Public Class SpeedTest
 
+    Public Delegate Sub CodeToExecute()
     Public Property Iterations As Integer = 1
-    Private _timers As List(Of Timer) = New List(Of Timer)
     Private _results As String = ""
+    Private _timers As Dictionary(Of Timer, CodeToExecute) = New Dictionary(Of Timer,CodeToExecute)
 
     Public Sub New()
     End Sub
 
-    Public Sub NewTimer(message As String)
+    Public Sub AddTest(message As String, ByVal code As CodeToExecute)
         
-        _timers.Add(New Timer(message))
+        _timers.Add(New Timer(message), code)
 
     End Sub
 
     Public Sub RunTests()
-       For Each _timer in _timers
-           _timer.StartTimer()
-           For i = 0 To Iterations
-                'Execute user code here
-               Dim x As Double
-               x = (34452/12343)*323^(2/12)
-           Next i
-           _timer.StopTimer()
 
-           AppendResults(_timer.GetResults)
-       Next _timer
+        For Each timer As KeyValuePair(Of Timer, CodeToExecute) in _timers
+
+           GC.WaitForPendingFinalizers
+           GC.Collect
+
+           timer.Key.StartTimer()
+           For i = 0 To Iterations
+               timer.Value.Invoke()
+           Next i
+           timer.Key.StopTimer()
+
+           AppendResults(timer.Key.GetResults)
+       Next timer
     End Sub
 
     Public Sub ShowResultsInDialog()
-        Messagebox.Show(_results)
+        System.Windows.Forms.Messagebox.Show(_results)
     End Sub
 
     Public Function GetResults() As String
@@ -40,4 +43,5 @@ Public Class SpeedTest
     Private Sub AppendResults(value As String)
         _results = _results & vbLf & value
     End Sub
+
 End Class
