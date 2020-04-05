@@ -10,7 +10,9 @@ Public Class SpeedTest
     End Sub
 
     Public Sub NewTimer(message As String)
+        
         _timers.Add(New Timer(message))
+
     End Sub
 
     Public Sub RunTests()
@@ -23,7 +25,7 @@ Public Class SpeedTest
            Next i
            _timer.StopTimer()
 
-           AppendResults(_timer.Results)
+           AppendResults(_timer.GetResults)
        Next _timer
     End Sub
 
@@ -31,7 +33,7 @@ Public Class SpeedTest
         Messagebox.Show(_results)
     End Sub
 
-    Public Function Results() As String
+    Public Function GetResults() As String
         Return _results
     End Function
 

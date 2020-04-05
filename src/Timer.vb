@@ -20,10 +20,10 @@ Public Class Timer
     Public Sub StopTimer()
         _stopwatch.Stop()
         _timespan = _stopwatch.Elapsed
-        _result = String.Format("{0:00}:{1:00}:{2:00}.{3:00}", _timespan.Hours, _timespan.Minutes, _timespan.Seconds, _timespan.Milliseconds / 10)
+        _result = String.Format("{0:00}.{1:000}", (_timespan.Hours * 3600) + (_timespan.Minutes*60) + _timespan.Seconds, _timespan.Milliseconds)
     End Sub
 
-    Public Function Results() As String
+    Public Function GetResults() As String
         Return me._message & " Total Time: " & _result
     End Function
 

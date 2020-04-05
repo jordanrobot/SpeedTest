@@ -17,7 +17,7 @@ Imports Timer
             System.Threading.Thread.Sleep(15)
             tempTimer.StopTimer()
 
-            Assert.AreNotEqual(tempTimer.Results, "")
+            Assert.AreNotEqual(tempTimer.GetResults, "")
         End Sub
 
 

@@ -33,7 +33,7 @@ Imports SpeedTest
             Dim tempTest As SpeedTest = New SpeedTest()
             tempTest.NewTimer("Message")
 
-            Assert.AreEqual(tempTest.Results, "")
+            Assert.AreEqual(tempTest.GetResults, "")
         End Sub
 
         <Test>
@@ -43,7 +43,7 @@ Imports SpeedTest
             tempTest.Iterations = 50
             tempTest.RunTests()
 
-            Assert.AreNotEqual(tempTest.Results, "")
+            Assert.AreNotEqual(tempTest.GetResults, "")
         End Sub
 
 
