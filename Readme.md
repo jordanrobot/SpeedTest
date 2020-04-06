@@ -21,12 +21,6 @@ This is an outline of the tool's primary class (this may change as the tool is d
 How to Use
 ---
 
-* Please refer to the [Example.vb](src/Example.vb) file for an example of how to utilize this library.
-* Add a reference to the SpeedTests.dll, or
-* Use the SpeedTest Template.iLogicVB file as the template for your speed test rules.  Edit the code in Main and TestOne and TestTow.  TestOne and TestTwo are just empty example methods.
-
-Builds
----
-
-* You can find the iLogicVb [template file here](builds/SpeedTest-Template.iLogicVb).  Download and modify the code in main and the called functions TestOne and TestTwo.  You can add new tests, delete them, etc.
-* A new .dll build will be placed in the /builds/ folder at some point.
+* Please refer to the [StringBuilder-Test-Sample.vb](samples/StringBuilder-Test-Sample.vb) file for an example and more detailed instructions on how to use this tool.
+* Add a reference to the SpeedTests.dll (builds\ folder), or
+* You can find the iLogicVb template here: [SpeedTest-Template.iLogicVB](builds/SpeedTest-Template.iLogicVb).  Download and modify the code in main and the called functions TestOne and TestTwo.  You can add new tests, delete them, etc.  Again, check out the [StringBuilder-Test-Sample.vb](samples/StringBuilder-Test-Sample.vb) to read the inline documentation.
