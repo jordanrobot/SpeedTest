@@ -30,7 +30,7 @@
     <DefineDebug>false</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
-    <OutputPath>..\builds\release\</OutputPath>
+    <OutputPath>..\builds\</OutputPath>
     <DocumentationFile>SpeedTest.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
@@ -71,8 +71,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SpeedTest Template Header.vb" />
-    <Compile Include="HowToUse.vb" />
+    <None Include="SpeedTest Template Header.vb" />
     <Compile Include="SpeedTest.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">

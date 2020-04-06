@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SpeedTest", "src\SpeedTest.vbproj", "{534A6F5A-24ED-486C-B64B-6CB41642A421}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SpeedTest.UnitTests", "tests\SpeedTest.UnitTests\SpeedTest.UnitTests.vbproj", "{433F40F8-02FD-4FA2-8AEA-FCF94169EA7E}"
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "SpeedTest.UnitTests", "tests\SpeedTest.UnitTests\SpeedTest.UnitTests.vbproj", "{433F40F8-02FD-4FA2-8AEA-FCF94169EA7E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,7 +20,6 @@ Global
 		{433F40F8-02FD-4FA2-8AEA-FCF94169EA7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{433F40F8-02FD-4FA2-8AEA-FCF94169EA7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{433F40F8-02FD-4FA2-8AEA-FCF94169EA7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{433F40F8-02FD-4FA2-8AEA-FCF94169EA7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
