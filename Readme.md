@@ -21,12 +21,12 @@ This is an outline of the tool's primary class (this may change as the tool is d
 How to Use
 ---
 
-* Please refer to the [HowToUse.vb](https://github.com/jordanrobot/SpeedTest/src/HowToUse.vb) file for an example of how to utilize this library.
+* Please refer to the [Example.vb](src/Example.vb) file for an example of how to utilize this library.
 * Add a reference to the SpeedTests.dll, or
 * Use the SpeedTest Template.iLogicVB file as the template for your speed test rules.  Edit the code in Main and TestOne and TestTow.  TestOne and TestTwo are just empty example methods.
 
 Builds
 ---
 
-* You can find the iLogicVb [template file here](https://github.com/jordanrobot/SpeedTest/builds/SpeedTest Template.iLogicVb).  Download and modify the code in main and the called functions TestOne and TestTwo.  You can add new tests, delete them, etc.
+* You can find the iLogicVb [template file here](builds/SpeedTest-Template.iLogicVb).  Download and modify the code in main and the called functions TestOne and TestTwo.  You can add new tests, delete them, etc.
 * A new .dll build will be placed in the /builds/ folder at some point.
