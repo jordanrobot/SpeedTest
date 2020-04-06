@@ -23,3 +23,9 @@ How to Use
 
 * Please refer to the HowToUse.vb file for an example of how to utilize this library.
 * Add a reference to the SpeedTests.dll or use the SpeedTest template.iLogicVB file as the template for your speed tests.
+
+Builds
+---
+
+* You can find the iLogicVb (template file here)[/builds/SpeedTest Template.iLogicVb].  Download and modify the code in main and the called functions TestOne and TestTwo.  You can add new tests, delete them, etc.
+* A new .dll build will be placed in the /builds/ folder at some point.
