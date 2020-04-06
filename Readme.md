@@ -27,5 +27,5 @@ How to Use
 Builds
 ---
 
-* You can find the iLogicVb (template file here)[/builds/SpeedTest Template.iLogicVb].  Download and modify the code in main and the called functions TestOne and TestTwo.  You can add new tests, delete them, etc.
+* You can find the iLogicVb [template file here](/builds/SpeedTest Template.iLogicVb).  Download and modify the code in main and the called functions TestOne and TestTwo.  You can add new tests, delete them, etc.
 * A new .dll build will be placed in the /builds/ folder at some point.
